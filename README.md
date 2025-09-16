@@ -53,9 +53,9 @@ pip install -U pandas numpy scikit-learn xgboost imbalanced-learn matplotlib
 
 ## Data 
 The original CIC-IoT2023 files are very large (PCAP-derived).
-This repo relies on a balanced CSV subset built via stratified sampling + SMOTE (not included due to size).
+This repo relies on a balanced CSV subset built via stratified sampling + SMOTE.
 If you rebuild:
-Extract features from PCAPs into tabular form (see paper for the 39-feature schema).
+Extract features from PCAPs into tabular form.
 Stratified sample ~3k rows per class (or as available).
 Apply the preprocessing steps above strictly inside a train/val/test split to avoid leakage.
 
